@@ -1,24 +1,18 @@
-# README
+## 起動手順
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+envファイル作成
+```
+MYSQL_ROOT_PASSWORD=password
+TZ=Japan
+```
 
-Things you may want to cover:
+Dockerイメージをbuild
+```
+docker compose build
+```
 
-* Ruby version
+DB作成
+```
+docker compose run web bin/rails db:create
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
