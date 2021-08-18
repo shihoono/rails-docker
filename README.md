@@ -6,6 +6,11 @@ MYSQL_ROOT_PASSWORD=password
 TZ=Japan
 ```
 
+yarn update
+```
+yarn install --check-files
+```
+
 Dockerイメージをbuild
 ```
 docker compose build
